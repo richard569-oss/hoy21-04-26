@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Editar Producto</h3>
+
+<form method="POST">
+    <input name="nombre" value="{{producto.nombre}}" class="form-control mb-2">
+    <input name="categoria" value="{{producto.categoria}}" class="form-control mb-2">
+    <input name="precio" value="{{producto.precio}}" class="form-control mb-2">
+    <input name="stock" value="{{producto.stock}}" class="form-control mb-2">
+
+    <button class="btn btn-primary">Actualizar</button>
+</form>
+{% endblock %}
